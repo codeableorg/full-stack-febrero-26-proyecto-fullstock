@@ -30,7 +30,12 @@
   <body>
     <header></header>
     <main>
-      <!-- <section class="hero"></section> -->
+      <section class="hero">
+        <button class="button">
+          <img class="button__icon" src="/public/icons/envelope.svg" alt="" />
+          Button
+        </button>
+      </section>
       <section class="">
         <div>
           <h3>Compra por categoría</h3>
@@ -42,7 +47,7 @@
         </div>
         <div class="categories-container">
           <!-- BEM: Bloque, Elemento, Modificador -->
-          <div class="category">
+          <div class="category hidden">
             <div class="category__portrait">
               <img
                 src="/public/images/categoria-polos.png"
@@ -58,8 +63,38 @@
               </p>
             </div>
           </div>
-          <div class="category"></div>
-          <div class="category"></div>
+          <div class="category">
+            <div class="category__portrait">
+              <img
+                src="/public/images/categoria-tazas.png"
+                alt="Un hombre contento luciendo un polo azul"
+                class="category__image"
+              />
+            </div>
+            <div>
+              <h4 class="category__title">Tazas</h4>
+              <p class="category__description">
+                Polos exclusivos con diseños que todo desarrollador querrá
+                lucir. Ideales para llevar el código a donde vayas.
+              </p>
+            </div>
+          </div>
+          <div class="category">
+            <div class="category__portrait">
+              <img
+                src="/public/images/categoria-stickers.png"
+                alt="Un hombre contento luciendo un polo azul"
+                class="category__image"
+              />
+            </div>
+            <div>
+              <h4 class="category__title">Stickers</h4>
+              <p class="category__description">
+                Polos exclusivos con diseños que todo desarrollador querrá
+                lucir. Ideales para llevar el código a donde vayas.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- <section class=""></section> -->

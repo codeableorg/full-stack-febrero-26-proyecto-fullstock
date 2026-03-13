@@ -1,11 +1,14 @@
-/* 1. Settings */
-@import url(1_settings/tokens.css);
+/* 1. Foundation */
+@import url(1_foundation/tokens.css);
+@import url(1_foundation/reset.css);
+@import url(1_foundation/global.css);
 
-/* 3. Generic */
-@import url(3_generic/reset.css);
+/* 2. Layout */
 
-/* 4. Elements */
-@import url(4_elements/global.css);
+/* 3. Components */
+@import url(3_components/category.css);
+@import url(3_components/hero.css);
+@import url(3_components/button.css);
 
-/* 6. Components */
-@import url(6_components/category.css);
+/* 4. Utilities */
+@import url(4_utilities/utilities.css);
