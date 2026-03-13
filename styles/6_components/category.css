@@ -1,0 +1,42 @@
+.category {
+  /* width: 343px; */
+  /* border: 2px solid red; */
+}
+
+.category__portrait {
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.category__image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+@media (min-width: 40rem) {
+  .category__image {
+    aspect-ratio: 4 / 5;
+  }
+}
+
+.category__title {
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0px;
+  margin-bottom: 0.5rem;
+}
+
+.category:hover .category__title {
+  text-decoration: underline;
+}
+
+.category__description {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0px;
+  color: var(--muted-foreground);
+}
