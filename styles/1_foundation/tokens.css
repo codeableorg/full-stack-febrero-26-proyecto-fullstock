@@ -4,10 +4,10 @@
   /* variables (globales) */
 
   /* Colors */
-  --black: hsla(0, 0%, 0%, 1);
-  --white: hsla(0, 0%, 100%, 1);
+  --black: hsla(0 0% 0% / 1);
+  --white: hsla(0 0% 100% / 1);
   --base-background: var(--white);
-  /* --transparent: hsla(0, 0%, 100%, 0); */
+  --transparent: hsla(0 0% 100% / 0);
 
   --accent-1: hsl(240 100% 100%);
   --accent-2: hsl(240 100% 99%);
@@ -17,11 +17,14 @@
   --accent-6: hsl(238 100% 90%);
   --accent-7: hsl(238 82% 85%);
   --accent-8: hsl(238 74% 77%);
-  --accent-9: hsl(238 74% 77%);
-  --accent-10: hsl(240 55% 56%);
-  --accent-11: hsl(242 50% 55%);
-  --accent-12: hsl(238 43% 27%);
+  /* revisar de aqui hacia arriba */
+  --accent-9: hsla(240 60% 60% / 1);
+  --accent-10: hsla(240 55% 56% / 1);
+  --accent-11: hsla(242 50% 55% / 1);
+  --accent-12: hsla(238 43% 27% / 1);
   --accent-a1: hsla(240 100% 50% / 0.01);
+  /* falta los valores 2-12 */
+  --accent-contrast: var(--white);
 
   --neutral-11: hsla(220, 6%, 40%, 1);
   --neutral-12: hsla(210 13% 13% / 1);
@@ -29,6 +32,9 @@
   /* Tokens de color: */
   --background: var(--base-background);
   --foreground: var(--neutral-12);
+  --primary-background: var(--accent-9);
+  --primary-foreground: var(--accent-contrast);
+  --primary-background-hover: var(--accent-10);
   --muted-foreground: var(--neutral-11);
 
   /* Typography */
@@ -43,6 +49,9 @@
   --family-emphasis:
     "Lora", "Georgia", "Palatino Linotype", "Book Antiqua", "Times New Roman",
     serif;
+
+  --size-normal: 1rem;
+  --size-small: 0.5rem;
 }
 
 /* h3 {
