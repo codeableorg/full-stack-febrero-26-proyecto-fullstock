@@ -4,6 +4,7 @@
 @import url(1_foundation/global.css);
 
 /* 2. Layout */
+@import url(2_layout/layout.css);
 
 /* 3. Components */
 @import url(3_components/category.css);
