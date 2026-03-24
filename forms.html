@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: rgb(228, 228, 231);
+      }
+
+      form {
+        width: 384px;
+      }
+
+      .input-container {
+        /* border: 1px solid palevioletred; */
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{Codeable}</h1>
+    <p>Sign in to your account</p>
+
+    <form>
+      <!-- <div class="input-container">
+        <label>
+          Nombre de usuario:
+          <input value="andre123" name="username" readonly />
+        </label>
+      </div>
+
+      <div class="input-container">
+        <label for="user-email">Email address</label>
+        <input
+          id="user-email"
+          type="email"
+          name="email"
+          placeholder="example@mail.com"
+          required
+        />
+      </div>
+      <div class="input-container">
+        <label for="user-password">Password</label>
+        <input
+          id="user-password"
+          type="password"
+          placeholder="******"
+          required
+        />
+      </div> -->
+      <div class="">
+        <p>¿Qué sistema operativo usas?</p>
+        <input id="so-windows" type="radio" name="OS" value="windows" />
+        <label for="so-windows">Windows</label> <br />
+        <input id="so-macos" type="radio" name="OS" value="macos" />
+        <label for="so-macos">MacOS</label> <br />
+        <input id="so-linux" type="radio" name="OS" value="linux" />
+        <label for="so-linux">Linux</label> <br />
+        <input id="so-otro" type="radio" name="OS" value="other" />
+        <label for="so-otro">Otro</label>
+      </div>
+
+      <!-- <label for="search-term" class="sr-only">Término de busqueda:</label>
+      <input id="search-term" type="search" /> -->
+
+      <button type="submit">Sign in</button>
+    </form>
+  </body>
+</html>
+
+<!-- http://
+127.0.0.1:5500/
+forms.html
+?username=andre123&email=andre%40mail.com&password=123456 -->
+
+<!-- http:// 127.0.0.1:5500/ forms.html
+?username=andre123&email=andretavarajara%40gmail.com -->
