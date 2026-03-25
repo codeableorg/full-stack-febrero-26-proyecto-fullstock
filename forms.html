@@ -45,7 +45,7 @@
           <input value="andre123" name="username" readonly />
         </label>
       </div>
-
+-->
       <div class="input-container">
         <label for="user-email">Email address</label>
         <input
@@ -64,9 +64,10 @@
           placeholder="******"
           required
         />
-      </div> -->
-      <div class="">
-        <p>¿Qué sistema operativo usas?</p>
+      </div>
+
+      <!-- <fieldset>
+        <legend>¿Qué sistema operativo usas?</legend>
         <input id="so-windows" type="radio" name="OS" value="windows" />
         <label for="so-windows">Windows</label> <br />
         <input id="so-macos" type="radio" name="OS" value="macos" />
@@ -75,12 +76,85 @@
         <label for="so-linux">Linux</label> <br />
         <input id="so-otro" type="radio" name="OS" value="other" />
         <label for="so-otro">Otro</label>
-      </div>
+      </fieldset> -->
 
+      <!-- <input
+        type="checkbox"
+        id="terms"
+        name="terms-accepted"
+        value="yes"
+        checked
+      />
+      <label for="terms">Acepta los terminos y condiciones?</label> -->
+
+      <br />
       <!-- <label for="search-term" class="sr-only">Término de busqueda:</label>
       <input id="search-term" type="search" /> -->
 
-      <button type="submit">Sign in</button>
+      <!-- <fieldset>
+        <legend>¿Qué tecnologías dominas?</legend>
+        <label><input type="checkbox" name="html" value="si" />HTML</label>
+        <label><input type="checkbox" name="css" value="si" />CSS</label>
+        <label><input type="checkbox" name="js" value="si" />JavaScript</label>
+        <label><input type="checkbox" name="node" value="si" />Node.js</label>
+        <label
+          ><input type="checkbox" name="express" value="si" />Express</label
+        >
+        <label>
+          <input type="checkbox" name="postgresql" value="si" />
+          PostgreSQL
+        </label>
+        <label><input type="checkbox" name="react" value="si" />React</label>
+        <label
+          ><input type="checkbox" name="tw" value="si" />Tailwind CSS</label
+        >
+      </fieldset> -->
+
+      <label for="country">Pais de nacimiento:</label>
+      <select name="country" id="country">
+        <option value="">Selecciona uno</option>
+        <optgroup label="Sudamérica">
+          <option value="AR">Argentina</option>
+          <option value="BO">Bolivia</option>
+          <option value="BR" disabled>Brasil</option>
+          <option value="CL">Chile</option>
+          <option value="CO">Colombia</option>
+          <option value="EC">Ecuador</option>
+          <option value="PY">Paraguay</option>
+          <option value="PE" selected>Perú</option>
+          <option value="UY">Uruguay</option>
+          <option value="VE">Venezuela</option>
+        </optgroup>
+        <optgroup label="Centro América">
+          <option value="DO">República Dominicana</option>
+          <option value="CR">Costa Rica</option>
+          <option value="CU">Cuba</option>
+          <option value="SV">El Salvador</option>
+          <option value="GT">Guatemala</option>
+          <option value="HN">Honduras</option>
+          <option value="MX">México</option>
+          <option value="NI">Nicaragua</option>
+          <option value="PA">Panamá</option>
+          <option value="PR">Puerto Rico</option>
+        </optgroup>
+      </select>
+
+      <br />
+      <br />
+
+      <label for="about">Cuentanos un poco sobre ti</label><br />
+      <textarea
+        name="about"
+        id="about"
+        maxlength="250"
+        rows="5"
+        cols="36"
+      ></textarea>
+
+      <br />
+      <br />
+
+      <button type="submit" name="hola" value="mundo">Sign in</button>
     </form>
   </body>
 </html>
