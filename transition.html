@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .button {
+        border: none;
+        border-radius: 8px;
+        padding: 12px 16px;
+        background-color: Lavender;
+        font-weight: 500;
+        font-size: 1.25rem;
+
+        transition:
+          transform 1000ms,
+          background-color 100ms;
+        transition-timing-function: steps(4, end);
+        transition-delay: 1000ms;
+      }
+
+      .button:hover {
+        /* transform: translateY(-200%); */
+        /* transform: rotate(360deg); */
+        /* background-color: red; */
+        transform: translateY(-100%);
+        background-color: Plum;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button">Hover me!</button>
+  </body>
+</html>

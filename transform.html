@@ -38,11 +38,37 @@
 
       .translate .transform {
         /* Activar una a la vez */
-        transform: translate(100px, 100px);
+        /* transform: translateX(100%) scale(1.5) rotate(30deg); */
+        /* transform: translateX(100%) scale(1.5); */
+        transform: scale(1.5) translateX(100%);
+
         /* transform: translateX(-20px); */
         /* transform: translateY(-30px); */
         /* transform: translateX(-100%); */
         /* transform: translateY(-100%); */
+      }
+
+      .scale .transform {
+        /* Activar una a la vez */
+        transform: scale(0.75);
+        /* transform: scale(1.5, 1.2); */
+        /* transform: scaleX(1.5); */
+        /* transform: scaleY(0.7); */
+      }
+
+      .rotate .transform {
+        /* Activar una a la vez */
+        /* transform: rotate(180deg); */
+        transform: rotate(0.5turn);
+
+        transform-origin: top right;
+      }
+
+      .skew .transform {
+        /* Activar una a la vez */
+        transform: skew(10deg, -20deg);
+        /* transform: skewX(30deg); */
+        /* transform: skewY(-20deg); */
       }
     </style>
   </head>
@@ -56,7 +82,7 @@
         <div class="natural-pos"><div class="box">Caja 3</div></div>
       </div>
     </section>
-    <!-- <section class="scale">
+    <section class="scale">
       <h3>Scale</h3>
       <div class="boxes">
         <div class="natural-pos"><div class="box">Caja 1</div></div>
@@ -79,6 +105,6 @@
         <div class="natural-pos"><div class="box transform">Caja 2</div></div>
         <div class="natural-pos"><div class="box">Caja 3</div></div>
       </div>
-    </section> -->
+    </section>
   </body>
 </html>
