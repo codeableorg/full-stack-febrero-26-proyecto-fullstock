@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes movimiento-lateral {
+        from {
+          transform: translateX(0);
+        }
+
+        to {
+          transform: translateX(200px);
+        }
+      }
+
+      @keyframes saludar {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        40% {
+          transform: translateX(0%);
+          opacity: 1;
+        }
+        55% {
+          transform: rotate(30deg);
+        }
+        70% {
+          transform: rotate(0deg);
+        }
+        85% {
+          transform: rotate(30deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0turn);
+        }
+        to {
+          transform: rotate(1turn);
+        }
+      }
+
+      @keyframes palpitar {
+        from {
+          transform: translateX(50px) scale(1);
+        }
+        to {
+          transform: translateX(50px) scale(1.5);
+        }
+      }
+
+      .hand {
+        font-size: 3em;
+        /* border: 1px solid black; */
+        padding: 8px;
+        width: fit-content;
+        animation: saludar 1000ms;
+        animation-timing-function: ease-in-out;
+        /* animation-iteration-count: 3; */
+      }
+
+      img {
+        display: block;
+      }
+
+      .container {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .corazon {
+        width: 48px;
+        height: 48px;
+
+        animation: palpitar 3000ms;
+        animation-fill-mode: both;
+        /* animation: palpitar 1500ms ease-in-out infinite; */
+        /* animation-direction: alternate; */
+        /* animation: palpitar 3000ms ease-in-out infinite; */
+      }
+
+      .spinner {
+        animation: spin 1000ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="hand">👋🏼</div> -->
+
+    <!-- <div class="container">
+      <div class="spinner">
+        <img
+          src="https://res.cloudinary.com/dwdgpw20b/image/upload/v1694012054/illustrations/spinner_tuhxqk.svg"
+        />
+      </div>
+    </div> -->
+
+    <div class="container">
+      <div class="corazon">
+        <svg viewBox="0 0 24 24" fill="tomato">
+          <path
+            d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
