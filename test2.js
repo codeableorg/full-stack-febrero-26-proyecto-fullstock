@@ -5,7 +5,6 @@ console.log("Hola Mundo!");
 // Numbers: 2026, 27
 // Strings: "André", "Marzo", "negro"
 // Booleans: true, false
-
 // Null: null
 // Undefined
 

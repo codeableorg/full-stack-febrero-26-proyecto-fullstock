@@ -44,12 +44,47 @@
 // fecha expiracion
 // codigo
 
-let nombre = "André";
-const email = "andre@mail.com";
-let password = "123456";
-let numeroTarjeta = null;
-let fechaExpiracionTarjeta = null;
-let codigoTarjeta = null;
-numeroTarjeta = 4463834628392647;
-fechaExpiracionTarjeta = "10/08/2030";
-codigoTarjeta = 678;
+// let nombre = "André";
+// let fechaNacimiento;
+// const email = "andre@mail.com";
+// let password = "123456";
+// let aceptaPublicidad = false;
+// let numeroTarjeta = null;
+// let fechaExpiracionTarjeta = null;
+// let codigoTarjeta = null;
+// let codigoTarjeta = null;
+
+// fechaNacimiento = "01/01/2000";
+
+// console.log(numeroTarjeta);
+
+// let participantes = 0;
+
+// let a = 0;
+// // a++;
+// a = a * 2;
+// a *= 2;
+
+// a = a + 1;
+// a += 1;
+
+// a = a / 10;
+// a /= 10;
+
+// Booleans
+// Operadores Logicos
+// AND (Y): && (doble ampersand)
+// OR (O): || (doble pipe)
+// NOT (lo contrario de...): ! (signo de exclamacion)
+
+// valores truthy:
+// todos los numeros excepto el cero (0)
+// todos los strings excepto el string vacio
+
+// valores falsy:
+// 0
+// NaN
+// ""
+// null
+// undefined
+// false
