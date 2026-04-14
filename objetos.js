@@ -25,23 +25,32 @@
 
 // usuario.pais = "Perú";
 
-let sherlock = {
+const sherlock = {
   apellido: "Holmes",
   direccion: { ciudad: "Londres" },
 };
 
-let john = {
+const john = {
   apellido: "Watson",
   direccion: sherlock.direccion,
 };
 
-// console.log(sherlock.edad);
-// ocurre la pelea
-john.apellido = "Lennon";
-// john.direccion.ciudad = "Nueva York";
+console.log(sherlock.direccion.ciudad);
+console.log(john.direccion.ciudad);
 
+john.apellido = "Lennon";
 john.direccion = { ciudad: "Nueva York" };
 
-// console.log(sherlock);
-let nombrePropiedad = prompt("¿Qué quieres saber?");
-console.log(sherlock[nombrePropiedad]);
+// john = {
+//   apellido: "Lennon",
+//   direccion: { ciudad: "Nueva York" },
+// };
+
+console.log(sherlock.direccion.ciudad);
+console.log(john.direccion.ciudad);
+
+// console.log(sherlock.edad);
+// ocurre la pelea
+// john.direccion.ciudad = "Nueva York";
+// let nombrePropiedad = prompt("¿Qué quieres saber?");
+// console.log(sherlock[nombrePropiedad]);

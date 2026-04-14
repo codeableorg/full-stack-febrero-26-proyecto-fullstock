@@ -35,5 +35,39 @@ const saludar = function () {
   console.log(mensaje);
 };
 
-saludar();
-darLaBienvenida();
+// saludar();
+// darLaBienvenida();
+
+// function saludar() {
+//   console.log("¡Hola, mundo!");
+// }
+
+// saludar = "Otro valor";
+// console.log(saludar); // "Otro valor"
+
+function mostrarMensaje() {
+  let mensaje = "Soy una variable local";
+  console.log(mensaje);
+}
+
+// mostrarMensaje(); // Soy una variable local
+// console.log(mensaje); // Error: mensaje no está definido
+
+// Varibles EXTERNA!
+let mensajeExterno = "Soy una variable externa";
+
+function mostrarMensajeExterno() {
+  console.log(mensajeExterno);
+}
+
+// mostrarMensajeExterno(); // Soy una variable externa
+
+let nombre = "Sebastian";
+
+function saludarJuan() {
+  let nombre = "Juan";
+  console.log("Hola" + " " + nombre);
+}
+
+saludarJuan(); // "Hola Juan"
+console.log(nombre); // "Sebastian"
