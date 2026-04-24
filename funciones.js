@@ -83,12 +83,12 @@ function saludar(nombre) {
 // saludar("Daniel");
 // saludar();
 
-// let nombre = "Harry";
+let nombre = "Harry";
 
-// function saludar(nombre) {
-//   let edad = 20;
-//   console.log("¡Hola, " + nombre + "!");
-// }
+function saludar(nombre) {
+  let edad = 20;
+  console.log("¡Hola, " + nombre + "!");
+}
 
 // saludar("Carlos");
 // console.log(nombre);
