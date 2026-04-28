@@ -37,36 +37,46 @@
 // elefante.dormir = animal.dormir;
 // elefante.jugar = animal.jugar;
 
-const metodosAnimal = {
-  comer(cantidad) {
-    console.log(`${this.nombre} está comiendo.`);
-    this.energia += cantidad;
-  },
-  dormir(tiempo) {
-    console.log(`${this.nombre} está durmiendo.`);
-    this.energia += tiempo;
-  },
-  jugar(tiempo) {
-    console.log(`${this.nombre} está jugando.`);
-    this.energia -= tiempo;
-  },
-};
+// const metodosAnimal = {
+//   comer(cantidad) {
+//     console.log(`${this.nombre} está comiendo.`);
+//     this.energia += cantidad;
+//   },
+//   dormir(tiempo) {
+//     console.log(`${this.nombre} está durmiendo.`);
+//     this.energia += tiempo;
+//   },
+//   jugar(tiempo) {
+//     console.log(`${this.nombre} está jugando.`);
+//     this.energia -= tiempo;
+//   },
+// };
 
 // Creacion de una funcion constructora
 function Animal(nombre, energia) {
   // crear un nuevo objeto (animal)
-  const animal = {};
+  const animal = Object.create(Animal.prototype);
+
   // configuramos el objeto
   animal.nombre = nombre;
   animal.energia = energia;
 
-  animal.comer = metodosAnimal.comer;
-  animal.dormir = metodosAnimal.dormir;
-  animal.jugar = metodosAnimal.jugar;
-
   // entregar dicho objeto
   return animal;
 }
+
+Animal.prototype.comer = function (cantidad) {
+  console.log(`${this.nombre} está comiendo.`);
+  this.energia += cantidad;
+};
+Animal.prototype.dormir = function (tiempo) {
+  console.log(`${this.nombre} está durmiendo.`);
+  this.energia += tiempo;
+};
+Animal.prototype.jugar = function (tiempo) {
+  console.log(`${this.nombre} está jugando.`);
+  this.energia -= tiempo;
+};
 
 // Instanciación Funcional
 // Instancia: objeto
@@ -74,12 +84,8 @@ const burro = Animal("Burro", 8);
 const leon = Animal("Leo", 10);
 const jirafa = Animal("Lazy", 7);
 
+// const xyz = new Object();
+
 leon.comer(4);
 leon.dormir(5);
 leon.jugar(1);
-jirafa.dormir(8);
-jirafa.comer(5);
-jirafa.jugar(3);
-burro.jugar(2);
-burro.dormir(8);
-burro.comer(7);
