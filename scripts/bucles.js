@@ -1,9 +1,9 @@
 // for
 // una iteracion es cada una de las veces que se ejecuta el bloque de codigo
 // mientras i sea menor a 5
-// for (let i = 0; i < 5; i++) {
-//   console.log(i);
-// }
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
 
 // while
 // let i = 10;
