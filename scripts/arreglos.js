@@ -30,27 +30,43 @@
 // console.log(nums);
 // console.log(duplicados);
 
-const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const pares = numeros.filter((numero) => numero % 2 === 0);
-const impares = numeros.filter((numero) => numero % 2 === 1);
+// const pares = numeros.filter((numero) => numero % 2 === 0);
+// const impares = numeros.filter((numero) => numero % 2 === 1);
 
 // console.log(pares);
 // console.log(impares);
 // console.log(numeros);
 
-const usuarios = [
-  { id: 4638252, nombre: "Ana", apellido: "Rodriguez" }, // 0
-  { id: 4735263, nombre: "Ana", apellido: "Rodriguez" }, // 1
-  { id: 9588363, nombre: "Luis" }, // 2
-  { id: 9476272, nombre: "Maria" }, // 3
-  { id: 5, nombre: "Julio" }, // 4
-  { id: 6, nombre: "Laura" }, // 5
-  { id: 7, nombre: "Ana" }, // 6
-];
+// const usuarios = [
+//   { id: 4638252, nombre: "Ana", apellido: "Rodriguez" }, // 0
+//   { id: 4735263, nombre: "Ana", apellido: "Rodriguez" }, // 1
+//   { id: 9588363, nombre: "Luis" }, // 2
+//   { id: 9476272, nombre: "Maria" }, // 3
+//   { id: 5, nombre: "Julio" }, // 4
+//   { id: 6, nombre: "Laura" }, // 5
+//   { id: 7, nombre: "Ana" }, // 6
+// ];
 
-const usuario = usuarios.find((u) => u.nombre === "Julio");
-console.log(usuario);
+// const usuario = usuarios.find((u) => u.nombre === "Julio");
+// console.log(usuario);
 
-const index = usuarios.findIndex((u) => u.id === 6);
-console.log(index);
+// const index = usuarios.findIndex((u) => u.id === 6);
+// console.log(index);
+
+const numeros = [1, 2, 3, 4];
+
+const total = numeros.reduce(sumarTodos, 1);
+
+function sumarTodos(acumulador, numero, posicion, numeros) {
+  // console.log(acumulador);
+  // console.log(numero);
+  // console.log(posicion);
+  // console.log(numeros);
+  return acumulador + numero;
+}
+
+console.log(total);
+
+const mensaje = numeros.join();

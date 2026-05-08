@@ -20,6 +20,6 @@ Animal.prototype.jugar = function (tiempo) {
 const leon = new Animal("Leo", 10);
 // const elefante = Animal("Elefante", 100); // undefined
 
-leon.comer(4);
-leon.dormir(5);
-leon.jugar(1);
+for (const key in leon) {
+  console.log(key);
+}
